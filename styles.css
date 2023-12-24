@@ -1,14 +1,17 @@
-/* Bordered form */
-html {
-  justify-content: center;
-}
-
-body {
+h3 {
   text-align: center;
+
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
 }
 form {
     border: 3px solid #f1f1f1;
-    display: inline-block;
+    
   }
   
   /* Full-width inputs */
@@ -20,11 +23,10 @@ form {
     border: 1px solid #ccc;
     box-sizing: border-box;
   }
-  
   /* Set a style for all buttons */
   button {
-    background-color: #04AA6D;
-    color: white;
+    background-color: orange;
+    color: black;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -37,23 +39,21 @@ form {
     opacity: 0.8;
   }
 
+  .newact {
+    background-color: gray;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
   .box {
-    width: 312px;
-    height: 101px;  
+    width: 400px;
+    height: auto;  
     margin: auto;
     padding: 10px;
-  }
-  /* Extra style for the cancel button (red) */
-  .cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-  }
-  
-  /* Center the avatar image inside this container */
-  .imgcontainer {
-    text-align: center;
-    margin: auto;
   }
   
   /* Avatar image */
@@ -61,25 +61,19 @@ form {
     margin:auto;
   }
   
-  /* Add padding to containers */
-  .container {
-    padding: 16px;
-    justify-content: center;
-  }
-  
   /* The "Forgot password" text */
   span.psw {
-    float: right;
+    float: left;
     padding-top: 16px;
   }
-  
+
+  span.fpsw {
+    float: right;
+  }
   /* Change styles for span and cancel button on extra small screens */
   @media screen and (max-width: 300px) {
     span.psw {
       display: block;
       float: none;
-    }
-    .cancelbtn {
-      width: 100%;
     }
   }
